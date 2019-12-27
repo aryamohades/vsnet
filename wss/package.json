@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf node_modules && npm cache verify",
     "dev": "node ./src/server.js",
-    "format": "prettier --write './**/*.js'",
+    "format": "prettier --write './**/*.{js,json}'",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"

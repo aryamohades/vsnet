@@ -4,8 +4,8 @@ WORKDIR /app/
 
 COPY package.json .
 COPY package-lock.json .
-COPY client.js .
+COPY src src
 
 RUN npm install --production
 
-CMD ["node_modules/forever/bin/forever", "client.js"]
+CMD ["node_modules/forever/bin/forever", "src/client.js"]
