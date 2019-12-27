@@ -6,11 +6,9 @@ let counter = 0;
 const app = uWS
   .App()
   .ws('/ws', {
-    /* Options */
     compression: 0,
     maxPayloadLength: 16 * 1024 * 1024,
     idleTimeout: 30,
-    /* Handlers */
     open: (ws, req) => {
       counter++;
 
