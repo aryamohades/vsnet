@@ -1,30 +1,32 @@
 {
-  "name": "wss",
+  "name": "@vsnet/wss",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rm -rf node_modules && npm cache verify",
-    "dev": "node ./src/server.js",
-    "format": "prettier --write './**/*.{js,json}'",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "node": ">=13.5.0"
-  },
-  "author": "aryamohades",
-  "license": "ISC",
+  "description": "Minimal WebSocket server",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/aryamohades/vsnet",
+  "bugs": "https://github.com/aryamohades/vsnet/issues",
+  "repository": "https://github.com/aryamohades/vsnet/tree/master/wss",
+  "contributors": [
+    {
+      "name": "Arya Mohades",
+      "email": "aryamohades@gmail.com"
+    }
+  ],
   "dependencies": {
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v16.5.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=13.5.0"
+  },
+  "scripts": {
+    "dev": "node ./src/server.js",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
